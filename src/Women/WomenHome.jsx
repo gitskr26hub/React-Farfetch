@@ -1,8 +1,8 @@
 
 import "./womenHome.css"
 
-import {Button, Box, Link } from "@chakra-ui/react"
-
+import {Button, Box, } from "@chakra-ui/react"
+import { Link } from "react-router-dom"
 
 export  function WomenNavbar(){
     return(
@@ -34,15 +34,17 @@ export default function WomenHome(){
         <>
  <WomenNavbar/>
 
-<a href="../navOptions/sale.html" id="fPart">
+
+<Link to="/womenproducts" id="fPart">
         <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/2247770/data/a11b74d71d5abd74b65f8adbe785056a.png?ratio=1x1_messaging-side&minWidth=637"/>
         <div  id="fDisc">
             <img src="../images/sale.jpg"/>
             <button id="shopButton" class="firstButton hoverButton">Shop Now</button>
         </div>
-    </a>
+    </Link>
     
-    <div href="../navOptions/newIn.html" id="fPart">
+  <Link  to="/womenproducts"  >
+    <div  id="fPart">
         <div id="sDisc">
             <div id="sText">
                 <h1>New accessory alert: sandals, shades, bags and more</h1>
@@ -52,15 +54,21 @@ export default function WomenHome(){
         <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3611612/data/7f5788667bed7893291e7dafa62859f3/1x1_messaging-side/637/data"/>
          </div>
     </div>
+</Link>  
 
-    <div href="../navOptions/clothing.html" id="tPart">
+
+<Link  to="/womenproducts"  >
+    <div  id="tPart">
         <div id="tDisc">
            <img src="https://cdn-static.farfetch-contents.com/cms-cm10/caas/v1/media/3611674/data/cd5c29ae57c80140b12abd0ab5c24c0c/1x1_two-columns/637/data"/>
            <p>THIS JUST IN: OFF-WHITE X GINORI 1735 HOMEWARE</p>
            <p>Off-White’s signature cult logos. Ginori 1735’s centuries-old craftsmanship. A limited-edition homeware collection to elevate your space</p>
         </div>
-        <img id="johnHardy" src="../images/swarovski.png"/>
+        <img id="johnHardy" src=".." />
     </div>
+</Link> 
+
+
 
     <h3 id="h3">New in: hand-picked daily from the world’s best brands and boutiques</h3>
     <div id="hoverProducts">
@@ -79,7 +87,7 @@ export default function WomenHome(){
 
     <div id="container"></div>
 
-     <button id="shopButton" class="hoverButton">Shop Now</button>
+ <Link to="/womenproducts"><button id="shopButton" class="hoverButton">Shop Now</button></Link>
 
      <h3 id="h3">Shop the world’s best boutiques</h3>
      <div id="stoneIsland">

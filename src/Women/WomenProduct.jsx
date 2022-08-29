@@ -1526,7 +1526,7 @@ export default function WomenProducts(){
      <WomenNavbar/>
 
 
-<Box style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)"}}>
+<Box style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",marginLeft:"5%"}}>
 {
     data.map((item)=>
     <Box key={item.id} >

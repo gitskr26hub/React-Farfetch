@@ -1,5 +1,6 @@
-import {Button, Box, Link } from "@chakra-ui/react"
+import {Button, Box} from "@chakra-ui/react"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 import  "./manPage.css"
 
@@ -37,7 +38,8 @@ export default function ManHome(){
         </div>
     </Link>
     
-    <div href="../navOptions/newIn.html" id="fPart">
+    <Link to="/manproducts">
+    <div  id="fPart">
         <div id="sDisc">
             <div id="sText">
                 <h1>FARFETCH BEAT is here</h1>
@@ -48,6 +50,7 @@ export default function ManHome(){
 
 </div>
     </div>
+</Link>
 
     <div href="../navOptions/clothing.html" id="tPart">
         <div id="tDisc">

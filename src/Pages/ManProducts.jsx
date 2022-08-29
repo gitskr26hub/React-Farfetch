@@ -1081,7 +1081,7 @@ export default function ManProducts(){
      <ManNavbar/>
 
 
-<Box style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)"}}>
+<Box style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",marginLeft:"5%" }}>
 {
     data.map((item)=>
     <Box key={item.id} >
