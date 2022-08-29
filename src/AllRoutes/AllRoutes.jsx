@@ -7,7 +7,9 @@ import KidsHome from "../Kids/KidsHome"
 import Home from '../Pages/Home'
 import Login from '../Pages/Login'
 import ManHome from '../Pages/ManHome'
+import ManProducts from '../Pages/ManProducts'
 import WomenHome from '../Women/WomenHome'
+import WomenProducts from '../Women/WomenProduct'
 
 
 
@@ -20,7 +22,10 @@ export const AllRoutes = () => {
          <Route path='/manhome' element={<ManHome/>}></Route>
          <Route path='/womenhome' element={<WomenHome/>}></Route>
          <Route path='/kidshome' element={<KidsHome/>}></Route>
-         
+         <Route path='/manproducts' element={<ManProducts/>}></Route>
+          <Route path='/womenproducts' element={<WomenProducts/>}></Route>
+
+
          {/* <Route path='/Mens' element={<MensHomepage/>}></Route>
          <Route path='/Kids' element={<KidsHomepage/>}></Route>
          <Route path='/WomenProducts' element={<WomenProducts/>}></Route>

@@ -1,4 +1,6 @@
-import {Button, Box, Link } from "@chakra-ui/react"
+import {Button, Box} from "@chakra-ui/react"
+import { Link } from "react-router-dom"
+
 import "./kidshome.css"
 
 function KidsNavbar(){
@@ -22,14 +24,11 @@ function KidsNavbar(){
 
     return(
         <>
-
-        <h1>kidspage</h1>
+       
           <KidsNavbar/>
 
 
-
-
-          <a  id="fPart" style="text-decoration:none;">
+          <a href="../kidsOptions/teen.html" id="fPart" style="text-decoration:none;">
         <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/2247770/data/a11b74d71d5abd74b65f8adbe785056a.png?ratio=1x1_messaging-side&minWidth=637"/>
         <div  id="fDisc">
             <img src="../images/sale.jpg"/>
@@ -95,6 +94,7 @@ function KidsNavbar(){
         </div>
        
     </div>
+\
 
 
         </>

@@ -1,4 +1,5 @@
 import {Button, Box, Link } from "@chakra-ui/react"
+import { useEffect, useState } from "react"
 
 import  "./manPage.css"
 
@@ -25,10 +26,10 @@ export  function ManNavbar(){
 export default function ManHome(){
 
     return(<>
-
+<Link to="/manproducts">
        <ManNavbar/>
 
-    <Link href="../navOptions/sale.html" id="fPart">
+    <Link to="/manproducts" id="fPart">
         <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/2247770/data/a11b74d71d5abd74b65f8adbe785056a.png?ratio=1x1_messaging-side&minWidth=637"/>
         <div  id="fDisc">
             <img src="../images/sale.jpg"/>
@@ -94,10 +95,11 @@ export default function ManHome(){
         </div>
     </div>
 
-
+</Link>
         
     </>)
 }
+
 
 
 
